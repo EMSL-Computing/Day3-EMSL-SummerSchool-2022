@@ -1,10 +1,46 @@
 
 # Table of Contents  
+- Using CoreMS with Docker Compose:     
+  - [CoreMS Jupyter Notebook Docker Image](#using-corems-docker-image)
 - Manual Installation  
   - [MAC](#mac-installation-instructions)  
   - [Windows](#windows-installation-instructions)  
-- Using CoreMS with Docker Compose:     
-  - [CoreMS Jupyter Notebook Docker Image](#using-corems-docker-image)
+
+# Using CoreMS Docker Image
+
+This option is the easiest way to get a functional CoreMS and Jupyter notebook working and uses docker compose to set up the docker container, volumes, database and virtual networks. 
+- A custom python distribution will CoreMS and all dependencies installed
+- A Jupyter notebook server with workflow examples
+- A PostgreSQL database for the molecular formulae assignment
+
+The first step is to install docker. If you don't have docker installed yet, the easiest way is to [install docker for desktop](https://www.docker.com/products/docker-desktop/)
+
+1. Copy you raw data into the day3-emsl-summerschool-2022/data/ directory before starting the services or : 
+
+    - modify the volume path in the docker-compose.yml file. 
+    
+        - locate the volumes on docker-compose.yml (line 19):
+
+        ```
+        volumes:
+        - ./data:/home/CoreMS/data
+        ```
+        - change ./data to your data directory path  
+
+2. Start the services using docker-compose: 
+    
+    - save the file and then call:
+    
+    ```bash
+    docker-compose up
+    ```
+3. On the terminal logs find the Jupyter Notebook url and copy and past into ypur browser:  
+
+    ```
+    corems | [I 05:41:37.790 NotebookApp]  or http://127.0.0.1:8888/?token=826ba2d4b2324f03441c189ddf4d1c84e365c39fb3377dd4
+
+    ```
+4. Open the Summer School CoreMS Tutorial notebook and you are ready to go. 
   
 # MAC Installation Instructions
 
@@ -130,38 +166,4 @@ https://www.python.org/downloads/
     jupyter notebook
     ```
 
-# Using CoreMS Docker Image
 
-This option is the easiest way to get a functional CoreMS and Jupyter notebook working and uses docker compose to set up the docker container, volumes, database and virtual networks. 
-- A custom python distribution will CoreMS and all dependencies installed
-- A Jupyter notebook server with workflow examples
-- A PostgreSQL database for the molecular formulae assignment
-
-The first step is to install docker. If you don't have docker installed yet, the easiest way is to [install docker for desktop](https://www.docker.com/products/docker-desktop/)
-
-1. Copy you raw data into the day3-emsl-summerschool-2022/data/ directory before starting the services or : 
-
-    - modify the volume path in the docker-compose.yml file. 
-    
-        - locate the volumes on docker-compose.yml (line 19):
-
-        ```
-        volumes:
-        - ./data:/home/CoreMS/data
-        ```
-        - change ./data to your data directory path  
-
-2. Start the services using docker-compose: 
-    
-    - save the file and then call:
-    
-    ```bash
-    docker-compose up
-    ```
-3. On the terminal logs find the Jupyter Notebook url and copy and past into ypur browser:  
-
-    ```
-    corems | [I 05:41:37.790 NotebookApp]  or http://127.0.0.1:8888/?token=826ba2d4b2324f03441c189ddf4d1c84e365c39fb3377dd4
-
-    ```
-4. Open the Summer School CoreMS Tutorial notebook and you are ready to go. 
