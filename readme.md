@@ -84,7 +84,7 @@
     ```
     $PKG_CONFIG_PATH=/Library/Frameworks/Mono.framework/Versions/{mono version}/lib/pkgconfig/ python -m pip install pythonnet
     ```
-7. Install CoreMS and Jupyter
+7. Install CoreMS, CoreMS dependecies, and Jupyter
     ``` 
     $ python -m pip install -r requirements.txt
     ```
@@ -121,7 +121,7 @@ https://www.python.org/downloads/
     $ python3 -m pip install wheel
     $ venv/Scripts/activate
     ```
-7. Install CoreMS and Jupyter
+7. Install CoreMS, CoreMS dependencies, and Jupyter
     ``` 
     $ python3 -m pip install -r requirements.txt
     ```
