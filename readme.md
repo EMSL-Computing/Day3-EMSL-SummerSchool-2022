@@ -27,15 +27,16 @@ gcc-nm-11
 gcc-ranlib-11  
 
 ```
-In this case the version is 11, and replace it {version} in the next step: ls -s gcc-11 gcc
+In this case the version is 11. Replace the label {version} in the next step, in this case the command is: "ls -s gcc-11 gcc"
 
 ```
 $ ln -s g++-{version} g++ 
 $ ln -s gcc-{version} gcc
 
 ```
-4. Install Mono, DotNet (Needed to install PythonNet which is used to read Thermo Raw Files)
+call gcc --version to check everything is working
 
+4. Install Mono, DotNet (this step is needed to install PythonNet which is used to read Thermo raw files)
 ```
 $ brew install pkg-config
 $ brew install mono-mdk
@@ -72,7 +73,7 @@ $ python -m pip install -r requirements.txt
 ```
 8. Run Jupyter Notebook
 ```
-
+jupyter notebook
 ```
 # Installations Instructions for Windows
 
