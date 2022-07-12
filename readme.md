@@ -117,7 +117,7 @@ https://www.python.org/downloads/
     $ cd Day3-EMSL-SummerSchool-2002
     $ python3 -m venv venv
     $ python3 -m pip install -U pip
-    $ python -m pip install -U setuptools
+    $ python3 -m pip install -U setuptools
     $ python3 -m pip install wheel
     $ venv/Scripts/activate
     ```
