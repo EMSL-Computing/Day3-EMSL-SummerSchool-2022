@@ -4,7 +4,7 @@
   - [MAC](#mac-installation-instructions)  
   - [Windows](#windows-installation-instructions)  
 - Using CoreMS with Docker Compose:     
-  - [CoreMS Jupyter Notebook Docker Image](#)
+  - [CoreMS Jupyter Notebook Docker Image](#using-corems-docker-image)
   
 # MAC Installation Instructions
 
@@ -130,7 +130,7 @@ https://www.python.org/downloads/
     jupyter notebook
     ```
 
-# Using CoreMS Docker Images
+# Using CoreMS Docker Image
 
 This option is the easiest way to get a functional CoreMS and Jupyter notebook working and uses docker compose to set up the docker container, volumes, database and virtual networks. 
 - A custom python distribution will CoreMS and all dependencies installed
