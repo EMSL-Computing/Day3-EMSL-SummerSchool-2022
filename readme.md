@@ -6,9 +6,11 @@
   - [MAC](#mac-installation-instructions)  
   - [Windows](#windows-installation-instructions)  
 
+
 # Using CoreMS Docker Image
 
-This option is the easiest way to get a functional CoreMS, and Jupyter notebook working and uses docker-compose to set up the docker container, volumes, database, and virtual networks. 
+This option is the easiest way to get a functional CoreMS, and Jupyter notebook working locally and uses docker-compose to set up the docker container, volumes, database, and virtual networks. If you choose this option you don't need to follow the manual installtion session. 
+
 - A custom python distribution with CoreMS and all dependencies installed
 - A Jupyter notebook server with workflow example, and test data
 - A PostgreSQL database for the molecular formulae library creation and search
