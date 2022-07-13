@@ -18,6 +18,7 @@ services:
     volumes:
       - ./data:/home/corems/data
       - ./:/home/corems/
+      
     ports:
       - 8888:8888
     container_name: corems
