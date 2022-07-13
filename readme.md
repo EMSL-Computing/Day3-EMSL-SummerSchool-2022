@@ -17,7 +17,11 @@ This option is the easiest way to get a functional CoreMS, and Jupyter notebook 
 
 The first step is to install docker. If you don't have docker installed yet, the easiest way is to [install docker for desktop](https://www.docker.com/products/docker-desktop/)
 
-1. Copy your raw data into the day3-emsl-summerschool-2022/data/ directory before starting the services or : 
+1. Use git to clone the Day 3 tutorial repository into a location of your choice.
+
+    git clone https://github.com/EMSL-Computing/Day3-EMSL-SummerSchool-2022
+
+2. Copy your raw data into the day3-emsl-summerschool-2022/data/ directory before starting the services or : 
 
     - modify the volume path in the docker-compose.yml file. 
     
@@ -29,20 +33,20 @@ The first step is to install docker. If you don't have docker installed yet, the
         ```
         - change ./data to your data directory path  
 
-2. Start the services using docker-compose: 
+3. Start the services using docker-compose: 
     
     - save the file and then call:
     
     ```bash
     docker-compose up
     ```
-3. On the terminal logs, find the Jupyter Notebook URL and copy and paste into your browser:  
+4. On the terminal logs, find the Jupyter Notebook URL and copy and paste into your browser:  
 
     ```
     corems | [I 05:41:37.790 NotebookApp]  or http://127.0.0.1:8888/?token=826ba2d4b2324f03441c189ddf4d1c84e365c39fb3377dd4
 
     ```
-4. Open the Summer School CoreMS Tutorial notebook, and you are ready to go. 
+5. Open the Summer School CoreMS Tutorial notebook, and you are ready to go. 
   
 # MAC Installation Instructions
 
