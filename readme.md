@@ -9,9 +9,9 @@
 # Using CoreMS Docker Image
 
 This option is the easiest way to get a functional CoreMS, and Jupyter notebook working and uses docker-compose to set up the docker container, volumes, database, and virtual networks. 
-- A custom python distribution will CoreMS and all dependencies installed
-- A Jupyter notebook server with workflow examples
-- A PostgreSQL database for the molecular formulae assignment
+- A custom python distribution with CoreMS and all dependencies installed
+- A Jupyter notebook server with workflow example, and test data
+- A PostgreSQL database for the molecular formulae library creation and search
 
 The first step is to install docker. If you don't have docker installed yet, the easiest way is to [install docker for desktop](https://www.docker.com/products/docker-desktop/)
 
