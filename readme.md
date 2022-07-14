@@ -161,7 +161,7 @@ https://www.python.org/downloads/
     $ python3 -m pip install -U pip
     $ python3 -m pip install -U setuptools
     $ python3 -m pip install wheel
-    $ venv/Scripts/activate
+    $  .\venv\Scripts\activate
     ```
 7. Install CoreMS, CoreMS dependencies, and Jupyter
     ``` 
